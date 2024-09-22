@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="icon" href="img/cafeteria.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
+            /* Color de fondo suave */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Altura completa de la ventana */
+            margin: 0;
+        }
+
+        main {
+            background-color: white;
+            /* Fondo blanco para el formulario */
+            padding: 30px;
+            border-radius: 10px;
+            /* Bordes redondeados */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            /* Sombra suave */
+            width: 400px;
+            /* Ancho fijo */
+            text-align: center;
+            /* Centrar texto */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            /* Espacio debajo del título */
+            color: #3E2723;
+            /* Color del título */
+        }
+
+        label {
+            display: block;
+            /* Asegura que cada etiqueta esté en su propia línea */
+            margin: 10px 0 5px;
+            /* Espaciado */
+            color: #555;
+            /* Color del texto */
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            /* Ancho completo */
+            padding: 10px;
+            /* Espaciado interno */
+            border: 1px solid #ddd;
+            /* Borde sutil */
+            border-radius: 5px;
+            /* Bordes redondeados */
+            margin-bottom: 20px;
+            /* Espacio entre campos */
+            font-size: 1rem;
+            /* Tamaño de fuente */
+            transition: border-color 0.3s;
+            /* Transición suave al enfocar */
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #D84315;
+            /* Color de borde al enfocar */
+            outline: none;
+            /* Sin borde adicional */
+        }
+
+        button {
+            width: 100%;
+            /* Ancho completo */
+            padding: 10px;
+            /* Espaciado interno */
+            background-color: #D84315;
+            /* Color de fondo */
+            color: white;
+            /* Color del texto */
+            border: none;
+            /* Sin borde */
+            border-radius: 5px;
+            /* Bordes redondeados */
+            font-size: 1rem;
+            /* Tamaño de fuente */
+            cursor: pointer;
+            /* Cambia el cursor al pasar el mouse */
+            transition: background-color 0.3s, transform 0.3s;
+            /* Transición suave */
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #BF360C;
+            /* Color más oscuro al pasar el mouse */
+            transform: scale(1.05);
+            /* Efecto de aumento al pasar el mouse */
+        }
+
+        .buton {
+            width: 100%;
+            /* Ancho completo */
+            padding: 10px;
+            /* Espaciado interno */
+            background-color: hwb(14 8% 15%);
+            /* Color de fondo */
+            color: white;
+            /* Color del texto */
+            border: none;
+            /* Sin borde */
+            border-radius: 5px;
+            /* Bordes redondeados */
+            font-size: 1rem;
+            /* Tamaño de fuente */
+            cursor: pointer;
+            /* Cambia el cursor al pasar el mouse */
+            transition: background-color 0.3s, transform 0.3s;
+            /* Transición suave */
+            margin-top: 5px;
+            /* padding-top: 50px; */
+            /* display: ruby-text; */
+            text-decoration: none;
+
+        }
+
+        .buton:hover {
+            background-color: #BF360C;
+            /* Color más oscuro al pasar el mouse */
+            transform: scale(1.05);
+            /* Efecto de aumento al pasar el mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Login Administrador</h2>
+        <form action="login.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+           <button> <a class="buton" href="index.php">Regresar</a></button>
+        </form>
+
+
+    </main>
+</body>
+
+</html>
