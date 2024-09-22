@@ -7,7 +7,6 @@ if (!isset($_SESSION['admin'])) {
 }
 
 // Conexión a la base de datos
-// pedro joto
 $servername = "localhost";
 $username = "root";
 $password = "";
